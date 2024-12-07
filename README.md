@@ -22,8 +22,8 @@ This is a simple React application that demonstrates CRUD (Create, Read, Update,
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone https://github.com/MostafaZrour/react-axios-crud.git
+   cd react-axios-crud
    ```
 
 2. Install dependencies:
@@ -51,24 +51,25 @@ This is a simple React application that demonstrates CRUD (Create, Read, Update,
 
 ```
 src/
-├── components/
-│   ├── AddItem.js    # Component for adding items
-│   ├── EditItem.js   # Component for editing items
-│   ├── ItemList.js   # Component for displaying the list
-├── services/
-│   └── api.js        # Axios configuration and API functions
+├── pages/
+│   ├── Add.jsx       # Form to add a new item (user)
+│   ├── Edit.jsx      # Form to edit an existing item (user)
+│   ├── Layout.jsx    # Component for layout and routing logic
+│   └── Home.jsx      # Component for displaying the list of items (users)
 ├── App.js            # Main application component
-└── index.js          # Entry point
+├── index.js          # Entry point of the application
+└── db.json           # Mock database file for JSON Server
+
 ```
 
 ## API Endpoints
 
 The application expects the following endpoints (if using JSON Server):
 
-- `GET /items` - Get all items.
-- `POST /items` - Add a new item.
-- `PUT /items/:id` - Update an item by ID.
-- `DELETE /items/:id` - Delete an item by ID.
+- `GET /users` - Get all users.
+- `POST /users` - Add a new user.
+- `PUT /users/:id` - Update an user by ID.
+- `DELETE /users/:id` - Delete an user by ID.
 
 ## License
 
